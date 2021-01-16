@@ -1,0 +1,13 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+
+    </ion-buttons>
+    <ion-title>Barcode Poc</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div>
+  <zxing-scanner #scanner (scanSuccess)="scanSuccessHandler($event)">
+  </zxing-scanner>
+</div>
